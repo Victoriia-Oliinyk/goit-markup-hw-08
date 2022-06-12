@@ -1,23 +1,23 @@
-.social {
-    padding-top: 30px;
-    padding-right: 32px;
-    padding-bottom: 30px;
-    padding-left: 32px;
-}
+// .social {
+//     padding-top: 30px;
+//     padding-right: 32px;
+//     padding-bottom: 30px;
+//     padding-left: 32px;
+// }
 
-.social-nav {
-    width: 44px;
-    height: 44px;
-    justify-content: center;
+// .social-nav {
+//     width: 44px;
+//     height: 44px;
+//     justify-content: center;
 
-    &:last-child {
-        margin-right: 0;
-    }
+//     &:last-child {
+//         margin-right: 0;
+//     }
 
-    &:not(:last-child) {
-        margin-right: 10px;
-    }
-}
+//     &:not(:last-child) {
+//         margin-right: 10px;
+//     }
+// }
 
 .social-link {
     display: flex;
@@ -53,9 +53,7 @@
     }
 }
 
-.social-text {
-    margin-bottom: 16px;
-}
+
 
 .social-list {
     display: flex;
