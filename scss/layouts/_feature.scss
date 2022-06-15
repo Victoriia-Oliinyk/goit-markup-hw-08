@@ -1,7 +1,9 @@
 .feature-list {
+  
   @include mq(mobile-only){
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   @include mq(tablet-only) {

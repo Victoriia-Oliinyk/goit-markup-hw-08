@@ -394,6 +394,9 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -755,6 +758,8 @@ ul {
             align-items: baseline;
     padding-left: 0;
     padding-right: 0;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
