@@ -446,13 +446,13 @@
     }
 }
 .form-footer {
-
-    @media screen and (min-width: 480px){
-display: flex;
-flex-direction: column;
-
-align-items: center;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
+    align-items: center;
+    @media screen and (min-width: 480px){
+
+    
     }
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -464,10 +464,10 @@ align-items: center;
 }
 
 .form-footer__label {
-   
-    @media screen and (min-width: 480px){
-        margin: 0;
+    margin: 0;
         margin-bottom: 20px;
+    @media screen and (min-width: 480px){
+       
     }
     @media screen and (min-width: 1200px) {
         display: flex;
