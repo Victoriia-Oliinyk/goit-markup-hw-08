@@ -1,4 +1,9 @@
 .feature-list {
+  @include mq(mobile-only){
+    display: flex;
+    flex-direction: column;
+  }
+
   @include mq(tablet-only) {
     display: flex;
     flex-wrap: wrap;
