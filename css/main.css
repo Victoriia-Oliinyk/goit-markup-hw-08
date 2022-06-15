@@ -728,6 +728,8 @@ ul {
             align-items: baseline;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
