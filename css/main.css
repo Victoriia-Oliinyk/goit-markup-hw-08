@@ -697,6 +697,25 @@ ul {
   color: #fff;
 }
 
+@media screen and (min-width: 480px) {
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 60px;
+    padding-right: 89px;
+    padding-bottom: 65px;
+    padding-left: 76px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__content {
     display: -webkit-box;
@@ -720,6 +739,8 @@ ul {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -820,6 +841,7 @@ ul {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    margin-bottom: 0;
   }
 }
 
