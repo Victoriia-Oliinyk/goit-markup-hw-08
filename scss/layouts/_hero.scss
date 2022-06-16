@@ -1,36 +1,23 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
- .section.hero {
+.section.hero {
   text-align: center;
-   padding-top: 118px;
-   padding-bottom: 118px;
-   max-width: 1600px;
-   margin-left: auto;
-   margin-right: auto;
-   background-image: linear-gradient(
-       to right,
-       rgba(47, 48, 58, 0.4),
-       rgba(47, 48, 58, 0.4)
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
-     url("../../images/hw8/header-img__sm.jpg");
+    url("../../images/hw8/header-img__sm.jpg");
 
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-color: var(--background-hero-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--background-hero-color);
 
-   @include mq(retina) {
+  @include mq(retina) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -79,91 +66,24 @@
 }
 
 .hero-title {
-    
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 360px;
-  
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  
-    @media screen and (min-width: 1200px) {
-      font-size: 44px;
-      line-height: 1.36;
-      max-width: 696px;
-    }
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 360px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
   }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-//   @media screen and (min-width: 1200px) {
-//     text-align: center;
-//     padding-top: 200px;
-//     padding-bottom: 200px;
-//     max-width: 1600px;
-//     height: 600px;
-
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(47, 48, 58, 0.4),
-//         rgba(47, 48, 58, 0.4)
-//       ),
-//       url("../images/hero.jpg");
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     min-width: 768px;
-
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(47, 48, 58, 0.4),
-//         rgba(47, 48, 58, 0.4)
-//       ),
-//       url("../images/header-img-tab1x.jpg");
-//   }
-// }
-
-// .container.hero {
-//   width: 696px;
-// }
-
-// .hero-title {
-//   margin-top: 0;
-//   margin-bottom: 30px;
-
-//   color: var(--hero-title-color);
-//   font-weight: 900;
-//   font-size: 26px;
-//   line-height: 1.62;
-//   text-align: center;
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
-
-//   @media screen and (min-width: 1200px) {
-//     font-size: 44px;
-//     line-height: 1.36;
-//     text-transform: uppercase;
-//     letter-spacing: 0.06em;
-//   }
-// }
