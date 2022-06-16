@@ -157,15 +157,35 @@ textarea {
 
 .form-polisy-group {
   display: flex;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  align-items: center;
-  justify-content: center;
+
   color: var(--second-text-color);
   cursor: pointer;
   margin-bottom: 30px;
+  align-items: center;
+    justify-content: center;
+  @include mq(mobile-only) {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+   
+  }
+  @include mq(tablet) {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    
+  }
+  @include mq(desktop) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
+  }
 }
 
 .custom-checkbox {

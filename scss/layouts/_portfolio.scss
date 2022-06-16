@@ -134,7 +134,11 @@
     flex-wrap: wrap;
     margin: -15px;
   }
-
+  @include mq(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .gallery__item {

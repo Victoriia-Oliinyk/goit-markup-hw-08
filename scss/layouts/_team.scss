@@ -6,26 +6,26 @@
      margin-bottom: 30px;
    }
  }
- .team-item {
-   width: 100%;
-   background: var(--background-body-color);
+//  .team-item {
+//    width: 100%;
+//    background: var(--background-body-color);
 
-   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+//    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+//      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
-   @include mq(mobile) {
-     margin-bottom: 30px;
-   }}
+//    @include mq(mobile) {
+//      margin-bottom: 30px;
+//    }}
 
- .team-item:last-child {
-     margin-bottom: 0;
-     @include mq(tablet) {
-      margin-bottom: 15px;
-         }
-     @include mq(desktop) {
-     margin-bottom: 15px;
-         }
- }
+//  .team-item:last-child {
+//      margin-bottom: 0;
+//      @include mq(tablet) {
+//       margin-bottom: 15px;
+//          }
+//      @include mq(desktop) {
+//      margin-bottom: 15px;
+//          }
+//  }
 
 
                  
@@ -53,11 +53,12 @@
    }
  }
  .social {
-   padding-top: 30px;
-   padding-right: 32px;
-   padding-bottom: 30px;
-   padding-left: 32px;
- }
+  padding: 30px 10px 24px 10px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 30px 10px 30px 10px;
+  }
+}
  .social-nav {
    width: 44px;
    height: 44px;
@@ -97,17 +98,41 @@
    }
  }
  .team-item {
-     @include mq(mobile-only) {
-         margin-bottom: 30px;
-     }
+  background: var(--background-body-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+  width: 100%;
 
-     @include mq(tablet) {
-         width: 50%;
-         flex-basis: calc((100% - 2 * 30px) / 2);
-         margin: 15px;
-     }
- }
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
 
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+}
  .team-item:last-child {
      @include mq(mobile-only) {
          margin-bottom: 0;
