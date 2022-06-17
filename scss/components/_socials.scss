@@ -7,7 +7,7 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-
+ 
   transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -18,6 +18,11 @@
     fill: var(--hero-title-color);
   }
 }
+
+.social-nav:not(:last-child) {
+  margin-right: 10px;
+}
+
 
 .social-icon {
   fill: var(--icon-color);
@@ -36,7 +41,7 @@
   justify-content: center;
 }
 
-// Блок с соцсетями в футере
+Блок с соцсетями в футере 
 .footer-social {
   @media screen and (max-width: 767px) {
     margin-top: 60px;
@@ -47,37 +52,7 @@
   }
 }
 
-.footer-social__title {
-  display: block;
-  margin-bottom: 20px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: #fff;
-}
-
 .footer__content {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-around;
-
-    padding-right: 89px;
-
-    padding-left: 76px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-around;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
@@ -122,4 +97,25 @@
   width: 20px;
   height: 20px;
   fill: #fff;
+}
+.footer-social__title {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #fff;
+
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+
+}
+.footer-social {
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
