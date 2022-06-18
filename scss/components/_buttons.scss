@@ -190,7 +190,7 @@
   color: #fff;
   background-color: #2196f3;
   border: none;
-  width: 200px;
+  max-width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -208,10 +208,9 @@
   }
 }
 
-.filters__list {
+.filtrs__list {
   display: flex;
   flex-wrap: wrap;
-
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
@@ -226,7 +225,15 @@
 
 .filtrs__item {
   margin-right: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+   @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+   }
+ 
 
   &:last-child {
     margin-right: 0;
