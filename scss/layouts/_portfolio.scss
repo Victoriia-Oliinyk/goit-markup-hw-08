@@ -48,7 +48,9 @@
 }
 
 .gallery__box {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
   flex-grow: 1;
   transition-property: box-shadow;
